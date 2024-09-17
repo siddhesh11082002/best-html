@@ -1,0 +1,68 @@
+<!-- The <form> tag is used to create a container for collecting and submitting data from user input on a web page. It is used to define a section of a web page that contains input fields, buttons, and other form elements, which allow users to enter and submit data to a web server.
+
+    The <form> element has several attributes that can be used to specify how the form should behave, such as action, method, enctype, and target. Here's a brief overview of these attributes:
+    
+    action: This attribute specifies the URL where the form data should be submitted when the form is submitted. It can be a relative or absolute URL, or a JavaScript function to handle form submission.
+    method: This attribute specifies the HTTP method to be used for submitting the form data. It can be either "GET" or "POST". "GET" method appends the form data to the URL as query parameters, while "POST" method sends the form data in the request body.
+    enctype: This attribute specifies the encoding type for the form data when it is submitted. It is used with the method attribute set to "POST". Common values include "application/x-www-form-urlencoded" for URL-encoded form data and "multipart/form-data" for binary or large form data.
+    target: This attribute specifies where the form response should be displayed after form submission. It can take values like "_self" (default), "_blank", "_parent", or "_top", or a custom target name.
+    Here's a brief overview of some common  tags used in conjunction with the <form> tag to create interactive and user-friendly forms on web pages :
+    
+    1. <label>: The <label> tag is used to associate a label with an input field in a form. It is typically used to provide a text description for an input field, such as a text input, checkbox, or radio button. The for attribute of the <label> tag should match the id attribute of the associated input field, so that clicking on the label will focus or activate the associated input field.
+    
+    2. <select> and <option>: The <select> tag is used to create a drop-down list of options in a form. The <option> tag is used to define the individual options within the <select> tag. Users can select one or more options from the list, depending on the multiple attribute on the <select> tag. The selected option(s) will be included in the form data when the form is submitted.
+    
+    3. <textarea>: The <textarea> tag is used to create a multi-line text input field in a form. It allows users to enter and edit text that can span multiple lines. The text entered in the <textarea> field will be included in the form data when the form is submitted.
+    
+    4. <button>: The <button> tag is used to create a button in a form. It can be used for various purposes, such as submitting a form, resetting a form, or triggering a JavaScript function. The type attribute on the <button> tag can be set to "submit", "reset", or "button" to specify the button's behavior.
+    
+    5. <fieldset> and <legend>: The <fieldset> tag is used to group related form elements together and create a visual grouping effect. The <legend> tag is used to provide a caption or title for the <fieldset> element, describing the purpose of the grouped form elements. <fieldset> and <legend> are commonly used to group and organize related form elements.
+    
+    6. <datalist>: The <datalist> tag is used to provide a pre-defined list of options for an input field in a form. The <datalist> tag is used in conjunction with an <input> field of type "text" or "search", and the list of options is defined using <option> tags within the <datalist> tag. The user can select an option from the list or enter a custom value.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submituserdata" method="get" target="_blank" autocomplete="off" id="myform1" enctype="multipart/form-data">
+        <input type="text" name="email" placeholder="enter your email">
+        <input type="password" name="pwd" placeholder="enter your password">
+        <input type="submit" value="login">
+
+    <br><br>
+    <label>What is your age ?</label>
+    <select name="userage" size="1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+<br><br>
+<textarea name="message" rows="10" cols="50" style="width:100px;height:100px;max-width:300px;min-width:150px;"></textarea>
+
+<br><br>
+<button type="button" onclick="alert('hey there')">Don't Click</button>
+
+<br><br>
+<fieldset>
+    <legend>Login</legend>
+    <input type="text" name="email" placeholder="enter your email" list="myname">
+    <datalist id="myname">
+        <option value="name1">name1</option>
+        <option value="name2">name2</option>
+        <option value="name3">name3</option>
+    </datalist>
+    <input type="password" name="pwd" placeholder="enter your password">
+    <input type="submit" value="login" formaction="/someotherpath" formenctype="multipart/form-data" formmethod="get" formtarget="_blank">
+</fieldset>
+
+    </form>
+    <input type="submit" value="login" form="myform1">
+</body>
+</html>

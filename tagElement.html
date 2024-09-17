@@ -1,0 +1,187 @@
+<!-- 
+Types :
+1. Heading Tag :
+In HTML, a heading tag is used to define the headings or titles of a webpage. There are six levels of heading tags : h1, h2, h3, h4, h5, and h6. The h1 tag is used for the main heading or title of the webpage, and the subsequent tags (h2, h3, etc.) are used for subheadings and other levels of headings.
+
+The syntax for heading tags from h1 to h6 is as follows:
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+The h1 tag represents the most important or highest-level heading on the page, while h6 represents the least important or lowest-level heading.
+
+2. Paragraph Tag : 
+The paragraph tag <p> in HTML is used to define a paragraph of text. It is a block-level element, which means it creates a rectangular block of content that takes up the full width of its container. 
+
+The syntax for the paragraph tag is as follows:
+
+<p> Your text here </p>
+3. Span Tag :
+The <span> tag is used as a container for small pieces of content that are inline with the surrounding text, such as a word or phrase. It is an inline element and does not create a new line. The purpose of the <span> tag is to apply styling or scripting to specific content without affecting the structure of the document. It can also be used to group and apply the same styling to multiple inline elements. The syntax for the <span> tag is:
+
+<span> Content goes here </span>
+ 
+
+Difference between <p> tag and <span> tag :
+
+ 
+
+<span> Tag	<p> Tag
+Defines a small inline section of content	Defines a paragraph
+Does not add line breaks before or after the element	Adds a line break before and after the element
+Used to group inline elements and apply styles	Used to structure larger blocks of text
+Example: <span style="color: blue;">Hello World!</span>	Example: <p>This is a paragraph.</p>
+4. List Tag :
+There are three types of lists that can be used to display information in a structured way. These are:
+
+(I) Ordered List (<ol>): An ordered list is a list of items where each item is numbered. It is created using the <ol> tag.
+
+Syntax:
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+(II) Unordered List (<ul>): An unordered list is a list of items where each item is bulleted. It is created using the <ul> tag.
+
+Syntax:
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+(III) Definition List (<dl>): A definition list is a list of terms and their corresponding definitions. It is created using the <dl> tag.
+
+Syntax:
+
+<dl>
+  <dt>Term 1</dt>
+  <dd>Definition 1</dd>
+  <dt>Term 2</dt>
+  <dd>Definition 2</dd>
+  <dt>Term 3</dt>
+  <dd>Definition 3</dd>
+</dl>
+Note: In the definition list, <dt> tag is used for the term and <dd> tag is used for its definition.
+
+The type attribute in the list tag (<ul> and <ol>) is used to define the type of list marker that should be used for each list item. There are several values that can be used for the type attribute:
+
+For ordered lists (<ol>), the type attribute can be used to specify the numbering style of the list. The default value is "1", which is for decimal numbering. Other possible values are "A" for uppercase alphabetical numbering, "a" for lowercase alphabetical numbering, "I" for uppercase Roman numerals, and "i" for lowercase Roman numerals.
+For unordered lists (<ul>), the type attribute can be used to specify the type of bullet or marker that should be used for each list item. The default value is "disc", which is a solid bullet. Other possible values are "circle" for a hollow circle, "square" for a solid square, and "none" for no bullet or marker.
+5. Comment :
+Comments are used to add notes or explanations to a section of code. These comments are not displayed in the browser but can be viewed by viewing the page source code.
+
+6. Bold Tag :
+The <b> tag  is used to define text in boldface. The text enclosed within the <b> and </b> tags will appear in bold format.
+
+Syntax:
+
+<b> Text to be bolded </b>
+7. Italics Tag :
+The "italics tag" is called the <i> tag, which stands for "italic". This tag is used to indicate that the text within the tags should be rendered in italic style. The syntax for the <i> tag is:
+
+<i> Italicized text </i>
+8. Underline Tag :
+The <u> tag is used to underline text. Here is the syntax for the <u> tag:
+
+<u> Underlined text </u>
+9. Strikethrough Tag :
+The <s> tag or <strike> tag is used to create a strikethrough effect on the text. It is typically used to show that a particular text has been deleted or is no longer valid.
+
+Syntax:
+
+<s>Text to be striked through</s>
+10. Superscript Tag :
+The superscript tag is used to represent a superscript text. It is often used to denote exponents, footnotes, mathematical equations, etc. The syntax for the superscript tag is:
+
+<sup> Superscript Text </sup>
+11. Subscript Tag :
+The subscript tag is used to format text in a subscript style. It is commonly used to write chemical formulas or mathematical expressions that require the use of a subscript. The syntax for the subscript tag is as follows:
+
+<sub> text </sub>
+12. Small Text Tag :
+The <small> tag is used to define smaller text. It is often used to display small print information such as copyright, legal disclaimers, and other similar text.
+
+The syntax for the <small> tag is as follows:
+
+<small> Smaller Text </small>
+13. Big Text Tag :
+The <big> tag is used to define text that should be displayed in a bigger font size than the surrounding text. The syntax for the <big> tag is as follows:
+
+<big> Text to be displayed in bigger font size </big>
+14. Highlight Tag :
+The <mark> tag is used to highlight text. It is often used to indicate search results, keywords, or other significant text on a web page. The syntax for the <mark> tag is as follows:
+
+<mark>Highlighted Text</mark> 
+-->
+
+
+<!-- The syntax for adding comments is: -->
+
+<!-- This is a comment
+Anything between <!- - - -> is treated as a comment and is ignored by the browser.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tags</title>
+    <meta name = "author" content="GFG">
+    <meta name = "description" content="This is a description">
+    <meta name = "keywords" content= "Movies,top 50 movies,gfg">
+</head>
+<body>
+    <h1>This is heading1</h1>
+    
+    <h2>This is heading2</h2>
+    
+    <h3>This is heading3</h3>
+    
+    <h4>This is heading4</h4>
+    
+    <h5>This is heading5</h5>
+    
+    <h6>This is heading1</h6>
+    
+    <p style="background-color: turquoise;">This is a paragraph</p>
+
+    <span style="background-color: turquoise;">This is span</span>
+
+    <ul>
+        <li> list 1</li>
+        <li> list 2</li>
+        <li> list 3</li>
+    </ul>
+
+    <ol type="a">
+        <li> list 1</li>
+        <li> list 2</li>
+        <li> list 3</li>
+    </ol>
+
+    <p>This is a <strong>pg</strong> in <b>bold</b>.</p>
+
+    <p>This is a <em>pg</em> in <i>italics</i>.</p>
+
+    <p>This is <u>underlined</u>.</p>
+
+    <p>This is <s>pg</s> has <del>strikethrough</del> text.</p>
+
+    <p>2<sup>2</sup> equals to 4</p>
+
+    <p>O<sub>3</sub> refers to third member of sequence O .</p>
+
+    <p>This <small>pg</small> has small text .</p>
+
+    <p>This <big>pg</big> has big text .</p>
+
+    <p>This <mark>pg</mark> has highlighted text .</p>
+
+</body>
+</html>

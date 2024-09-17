@@ -1,0 +1,124 @@
+<!-- 
+The <input> tag is a commonly used HTML tag that is used to create an input field or form control on a webpage. It allows users to input data, such as text, numbers, or other types of data, into a web form. The <input> tag has several attributes that can be used to customize its behavior and appearance. Here are some examples of how the <input> tag can be used:
+
+1. <input type="text">: This type of input element creates a text input field that allows users to enter text data. It can be used for various purposes such as collecting names, addresses, and other textual information.
+
+2. <input type="submit">: This type of input element creates a submit button that is used to submit the form data to the server for processing. When clicked, it triggers the form's submit action.
+
+3. <input type="password">: This type of input element creates a password input field that allows users to enter sensitive information, such as passwords or other confidential data. The input is typically masked with asterisks or dots for security reasons.
+
+4. <input type="radio">: This type of input element creates a radio button that allows users to select a single option from a group of options. Radio buttons are typically used for mutually exclusive options, where only one option can be selected at a time.
+
+5. <input type="checkbox">: This type of input element creates a checkbox that allows users to select one or more options from a group of options. Checkboxes are typically used for options that can be selected independently and multiple options can be selected simultaneously.
+
+6. <input type="button">: This type of input element creates a button that can be used to trigger JavaScript functions or perform custom actions on a web page. It does not submit form data to the server by default.
+
+7. <input type="color">: This type of input element creates a color picker control that allows users to select a color from a color palette.
+
+8. <input type="date">: This type of input element creates a date picker control that allows users to select a date from a calendar.
+
+9. <input type="file">: This type of input element creates a file input control that allows users to select and upload files from their local computer.
+
+10. <input type="month">: This type of input element creates a month picker control that allows users to select a month and year.
+
+11. <input type="time">: This type of input element creates a time picker control that allows users to select a time.
+
+12. <input type="datetime-local">: This type of input element creates a datetime picker control that allows users to select a date and time in the local time zone.
+
+13. <input type="week">: This type of input element creates a week picker control that allows users to select a week of the year.
+
+14. <input type="number">: This type of input element creates a numeric input field that allows users to enter numeric values. It may also include optional attributes such as min and max to specify the minimum and maximum values that can be entered.
+
+15. <input type="range">: This type of input element creates a slider control that allows users to select a value within a specified range.
+
+16. disabled: This attribute is used to disable the input field, preventing any user input. When an input field is disabled, its value cannot be changed by the user.
+
+17. readonly: This attribute is used to make the input field read-only, allowing the user to view the value but not modify it. Unlike disabled, a read-only input field can still be submitted with the form data.
+
+18. autocomplete: This attribute is used to specify whether the input field should have autocomplete functionality enabled or disabled. It takes a boolean value, such as "on" or "off", to control whether the browser should remember and suggest previously entered values for the input field.
+
+19. capture: This attribute is used with the input element of type "file" and is used to specify how the file should be captured. It can take values like "user" to allow the user to choose a file from their device, "environment" to capture a media file using the device's camera or microphone, or "none" to disable file capture.
+
+20. min and max: These attributes are used to set the minimum and maximum allowed values for numeric input fields, such as number, range, and date. For example, min="0" and max="100" would limit the input field to accept values between 0 and 100.
+
+21. maxlength and minlength: These attributes are used to specify the maximum and minimum length of text input fields, respectively. They can be used with text, search, url, tel, email, password, and textarea input types.
+
+22. placeholder: This attribute is used to provide a hint or example text that is displayed in the input field until the user enters a value. It is typically used to provide instructions or suggestions for the expected input.
+
+23. value: This attribute is used to set the initial value of the input field. It can be used with various input types to specify the default value that will be displayed when the form loads.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="fname">First name</label>
+    <input type="text" name="fname" id="fname">
+    <br><br>
+    <!-- -->
+    <label for="lname">Last Name<label>
+    <input type="text" name="1name">
+    <br><br>
+    <label for="userpassword">Password</label>
+    <input type="password" name="userpassword">
+    <input type="submit" value="SignUp">
+    <input type="reset" value="reset data">
+    <br><br>
+<br><br>
+<br><br> 
+<p>What is Your Gender?</p>
+<input type="radio" name="gender" value="Male">
+<label>Male</label>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<input type="radio" name="gender" value="Female">
+<label>Female</label>
+
+
+<br><br> 
+<br><br>
+<br><br>
+<p>What is Your hobby?</p>
+<input type="checkbox" name="hobby1" value="Reading">
+<label>Reading</label><br>
+<input type="checkbox" name="hobby2" value="Weading">
+<label>Writing</label><br>
+<br><br>
+<input type="button" value="Click Me" onclick="alert(2+2)">
+<br><br>
+<input type="color" name="bgcolor" value="#ffffff">
+<br><br>
+<input type="date" name="dob" max="2023-11-30" min="2023-10-30" value="2023-11-01">
+<br><br>
+<input type="file" name="myfile" accept=".pdf,.jpg">
+<br><br>
+<input type="month" min="2023-10" value="2023-11">
+<br><br>
+<input type="time" value="12:00:00"/>
+<br><br>
+<input type="datetime-local" value="2023-11-10T12:00:00"/>
+<br><br>
+<input type="week" value="2023-W10"/>
+<br><br>
+<input type="number" value="10" min="4" max="20" step="3" />
+<br><br>
+<label>Select Your Age</label>
+<input type="range" min="0" max="120" value="20" step="1"/>
+<input type="text" name="username" disabled value="Harshal">
+<input type="text" name="username2" readonly value="Harshal">
+<input type="text" name="email" autocomplete="on">
+<input type="file" name="userphoto" capture="user">
+<input type="number" name="userage" min="10" max="30" value="15">
+<input type="tel" name="userphone" maxlength="10" minlength="9">
+<input type="text" name="userphone" maxlength="10" minlength="9" placeholder="Enter Something">
+<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>

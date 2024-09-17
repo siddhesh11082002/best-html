@@ -1,0 +1,114 @@
+<!-- 
+ Image Tag :
+The <img> tag is an HTML element used to embed images in a web page. It is a self-closing tag, meaning it does not require a closing tag. The <img> tag has several attributes that define how the image should be displayed, including the src attribute, which specifies the URL of the image, the alt attribute, which provides alternative text for the image, and the width and height attributes, which specify the dimensions of the image.
+
+The syntax for the img tag is as follows:
+
+<img src="image_url" alt="alternative_text" width="width_pixels" height="height_pixels" />
+1. Source : src (required) specifies the URL of the image to be displayed.
+
+2. Alternative Text : alt (required) provides an alternative text description of the image for users who are visually impaired or who have images disabled in their browser.
+
+3. Width : width (optional) specifies the width of the image in pixels.
+
+4. Height : height (optional) specifies the height of the image in pixels.
+
+5. Loading : The loading attribute in the <img> tag is used to control how the browser loads and displays images on a web page. It is a new attribute introduced in HTML5 and is used to optimize the loading and rendering of images to improve web page performance.The loading attribute can have three possible values:
+
+auto : This is the default value, and it tells the browser to load the image as soon as possible.
+lazy : This tells the browser to delay loading the image until it is about to come into the viewport or the visible area of the web page. This can help reduce the initial load time of the page and improve performance, especially for images that are located below the fold or not immediately visible to the user.
+eager : This tells the browser to load the image immediately, even if it is not currently visible in the viewport. This can be useful for images that are critical to the content or layout of the page and need to be loaded and displayed as soon as possible.
+Note : It is an self closing tag.
+
+Video Tag :
+The <video> tag is an HTML5 element used to embed videos into a webpage. It allows the browser to display a video file natively, without requiring a third-party plugin. The <video> tag supports various video formats such as MP4, WebM, and Ogg.
+
+The controls and autoplay attributes are used in the video tag to enable video control buttons and automatic playback, respectively.
+
+a) The controls attribute adds a set of playback controls to the video player, such as play, pause, seek, and volume controls. It can be added as follows:
+
+<video poster="image.jpg" controls>
+
+  <source src="video.mp4" type="video/mp4">
+
+</video>
+In this syntax, the poster attribute is used to specify an image that will be displayed before the video starts playing.
+
+b) The autoplay attribute, on the other hand, tells the browser to start playing the video automatically as soon as it is loaded. It can be added as follows:
+
+<video src="video.mp4" autoplay></video>
+Audio Tag :
+The audio tag in HTML is used to embed audio files directly on a webpage. It allows developers to add audio files in various formats such as MP3, WAV, and OGG to their web pages. The audio tag supports the use of controls such as play, pause, and volume adjustment, which can be added using attributes such as autoplay, controls, and loop. The audio tag can also be used in conjunction with JavaScript to create interactive audio players and custom audio controls.
+
+The syntax for the audio tag is:
+
+<audio src="audio_file.mp3" controls></audio>
+The src attribute specifies the URL of the audio file to be played, and the controls attribute displays the built-in controls for the user to play, pause, and adjust the volume of the audio. Additional attributes can also be added to the audio tag for customization purposes.
+
+Object Tag :
+The <object> tag in HTML is used to embed an external resource into a web page, such as an image, video, audio, PDF, or Flash animation. The resources are usually multimedia files or plugins for web browsers. The <object> tag contains several attributes, including data, type, width, height, and classid, which are used to specify the source and display properties of the object.
+
+The syntax for the object tag:
+
+<object data="url" type="mime/type">
+  #fallback content#
+</object>
+The data attribute specifies the URL of the resource to be embedded, and the type attribute specifies the MIME type of the resource.
+
+Inside the object tag, you can include any kind of fallback content in case the media file cannot be loaded or displayed. For example, you can include text or an image that describes the content of the media file.
+
+Embedded Tag :
+The <iframe> tag is an example of an embedded tag in HTML. It is used to embed a webpage or a portion of a webpage into another HTML document. The src attribute specifies the URL of the webpage to be embedded. Other attributes such as width, height, scrolling, and frameborder can be used to customize the appearance and behavior of the embedded content . The <iframe> tag is commonly used for displaying content from other websites, embedding videos or maps, and creating a layout for a webpage that includes multiple sections. 
+
+The syntax for the <iframe> tag is:
+
+<iframe src="url" width="value" height="value"></iframe>
+The src attribute specifies the URL of the document to be embedded.
+The width attribute specifies the width of the embedded document.
+The height attribute specifies the height of the embedded document.
+Steps for embedding a YouTube video using an iframe:
+
+Go to the YouTube website and find the video you want to embed.
+Click on the "Share" button located beneath the video.
+Click on the "Embed" button in the share menu.
+Choose the video size and other customization options you prefer.
+Copy the iframe code generated by YouTube.
+Open your HTML document in a text editor.
+Paste the copied iframe code into the section of your HTML document where you want the video to appear.
+Save your HTML document and open it in a web browser to test the video playback.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia Tags</h1>
+
+    <img src="./image.png" alt="no image" width="200px" height="200px"/>
+
+    <video width="200px" height="200px" controls poster="./image.png">
+     <source src="./Woman-riding-a-horse-in-the-street-1283899.mov"
+     type="video/mov">
+     Your browser does not support this video
+    </video>
+
+    <video width="200px" height="200px" autoplay loop poster="./image.png">
+        <source src="./Woman-riding-a-horse-in-the-street-1283899.mov"
+        type="video/mov">
+        Your browser does not support this video
+       </video>
+
+    <audio controls>
+        <source src="./MA_DaniilDavydov_NeonAeon_Main.wav">
+    </audio>
+
+    <object data="./QUEUE.pdf" type="application/pdf" width="200px" height="200px"></object>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5i8ej1-GpFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

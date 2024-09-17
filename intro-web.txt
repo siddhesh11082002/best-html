@@ -1,0 +1,69 @@
+What is Internet :
+The internet is a vast network of computers and networks connected worldwide through various wired and wireless connections. It enables communication through email, instant messaging, and other means, information retrieval through web browsing, online transactions such as shopping and banking, social networking, entertainment, and much more. The internet uses standardized protocols for data transmission, allowing for seamless communication and information exchange. It has revolutionized the way we live, work, and interact with the world, shaping modern society in profound ways.
+
+World Wide Web :
+The World Wide Web, often abbreviated as WWW, is a global network of interconnected web pages and websites that are accessible over the internet. It was invented by Sir Tim Berners-Lee in 1989 and has since become the primary means of accessing and sharing information on the internet. The WWW is based on a client-server model, where web browsers act as clients that request web pages from web servers, which host and serve the web pages.
+
+Website: 
+A website is a collection of web pages that are interconnected and hosted on a web server. Websites are accessed through the internet using a web browser, and they can contain various types of content, such as text, images, videos, and interactive elements. Websites are typically used for informational, educational, commercial, or entertainment purposes, and they can be owned by individuals, organizations, or businesses.
+
+Web Page: 
+A web page is a single document or a file that is part of a website. It is written in HTML (Hypertext Markup Language) and contains content such as text, images, videos, links, and other elements that are displayed in a web browser. Web pages are the building blocks of a website, and they are accessed by users when they visit a website using a web browser.
+
+URL: 
+URL stands for Uniform Resource Locator, and it is a string of characters that specifies the address or location of a web page or other resources on the internet. A URL typically consists of a protocol (such as "http://" or "https://"), followed by the domain name (e.g., www.example.com), and optionally a path, query parameters, and a fragment identifier. URLs are used to uniquely identify and locate web pages on the internet.
+
+Web Browser: 
+A web browser is a software application that is used to access and view web pages on the internet. Examples of popular web browsers include Chrome, Firefox, Safari, and Edge. Web browsers interpret HTML, CSS, and JavaScript code to display web pages in a user-friendly format, and they provide features such as navigation, bookmarking, and search capabilities to help users interact with websites.
+
+Hyperlink: 
+A hyperlink, often referred to simply as a link, is a clickable element on a web page that allows users to navigate to another web page or resource on the internet. Hyperlinks are typically displayed as underlined text or clickable buttons, and they can also be images or other elements with associated URLs. Hyperlinks are fundamental for navigating between web pages and websites, and they are an essential aspect of the World Wide Web.
+
+HTTP :
+HTTP is the protocol used for communication between web browsers and web servers on the internet. It defines how messages are formatted and transmitted, and how servers and browsers respond to requests. It enables retrieval and display of web pages and resources on the web.
+
+HTTPS :
+HTTPS is a secure version of HTTP that encrypts data transmitted over the internet, providing increased security and protection for sensitive information exchanged between web browsers and web servers.
+
+Web Development :
+Web development is the process of building and maintaining websites and web applications. It involves various technologies, tools, and programming languages to create websites that are functional, interactive, and visually appealing. Here are some key concepts that form the basics of web development.
+
+Client-side programming:
+Client-side programming refers to the code that is executed on the user's device (client-side), typically using web browsers. It involves writing code in technologies such as HTML, CSS, and JavaScript that runs directly in the user's web browser. The client-side code is responsible for rendering the user interface, handling user interactions, and performing tasks that do not require communication with the server. For example, displaying dynamic content, validating form inputs, and handling user events such as button clicks or form submissions are all typically done on the client-side.
+
+Client-side programming is often used for creating responsive and interactive user interfaces, as it provides a smooth and fast user experience. Popular libraries and frameworks for client-side programming include React, Angular, and Vue.js.
+
+Server-side programming: 
+Server-side programming refers to the code that is executed on the server, which is the computer that hosts the website or web application. It involves writing code in server-side scripting languages such as PHP, Python, Ruby, or Node.js, which is executed on the server and generates dynamic content that is sent to the client-side for rendering in the user's web browser. Server-side code is responsible for handling tasks that require server-side processing, such as managing databases, handling user authentication, and processing form submissions.
+
+Server-side programming is used for managing the server-side logic, handling data processing, and performing tasks that require access to server resources or external services. Popular frameworks for server-side programming include Express (for Node.js), Django (for Python), and Laravel (for PHP).
+
+Front-end development:
+Front-end development: Front-end development, also known as client-side development, involves creating the user interface and user experience (UI/UX) of a website or web application. Front-end developers use technologies such as HTML, CSS, and JavaScript to design and develop the visual aspects of a website that users interact with directly. They are responsible for creating responsive web pages, optimizing performance, and ensuring a seamless user experience across different devices and browsers.
+
+Skills commonly associated with front-end development include proficiency in HTML, CSS, JavaScript, responsive design, user experience (UX) design, and web accessibility.
+
+Back-end development: 
+Back-end development, also known as server-side development, involves building and managing the server-side logic and infrastructure that powers websites and web applications. Back-end developers work with databases, server-side scripting languages (such as PHP, Python, Ruby, or Node.js), and other server-side technologies to handle data processing, server-side logic, and integration with external services. They are responsible for server-side security, performance optimization, and managing databases.
+
+Skills commonly associated with back-end development include proficiency in server-side scripting languages, databases (such as MySQL, MongoDB), server-side frameworks, API development, security, and performance optimization.
+
+Full-stack development: 
+Full-stack development involves proficiency in both front-end and back-end development. Full-stack developers are capable of building complete web applications, from designing and developing the user interface to handling server-side logic and database management. They have a broader skill set and are capable of working on both the client-side and server-side of web development.
+
+Skills commonly associated with full-stack development include proficiency in both front-end and back-end technologies, as well as a good understanding of databases, web servers, and software architecture.
+
+Web design: 
+Web design is the process of creating visually appealing and user-friendly interfaces for websites and web applications. It involves principles of layout, color theory, typography, and graphics. Web designers use tools like Adobe Photoshop, Sketch, or Figma to create mockups and wireframes of web pages, and then implement them using front-end technologies like HTML, CSS, and JavaScript.
+
+Responsive design: 
+Responsive design is the approach of designing websites and web applications to adapt and display properly on different devices and screen sizes, such as desktop computers, tablets, and smartphones. It involves using CSS media queries and other techniques to ensure that the website's layout, content, and functionality are optimized for different devices and screen resolutions.
+
+Web Hosting: 
+Web hosting is the process of making a website or web application accessible on the internet. It involves choosing a web hosting provider, setting up a server, and configuring the necessary software and settings to host a website. Deployment is the process of transferring a website or web application from a development environment to a live production environment, making it accessible to the public.
+
+Testing and debugging: 
+Testing and debugging are crucial steps in web development to ensure that websites and web applications work as intended. Testing involves checking for errors, bugs, and inconsistencies in the code, as well as validating the functionality and usability of the website. Debugging involves identifying and fixing issues in the code, troubleshooting problems, and ensuring smooth performance of the website.
+
+Web security: 
+Web security is an important aspect of web development to protect websites and web applications from security threats and vulnerabilities. It involves implementing security measures such as authentication, authorization, encryption, and validation to prevent unauthorized access, data breaches, and other security risks.

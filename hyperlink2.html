@@ -1,0 +1,68 @@
+<!-- Types Of Hyperlink Tags :
+1. Absolute Hyperlinks : Absolute hyperlinks use the complete URL (Uniform Resource Locator) of the target document or resource. They include the protocol (e.g., "http://" or "https://"), domain name (e.g., "example.com"), and the specific path or file name (e.g., "/page.html" or "/images/image.jpg"). Absolute hyperlinks point to a specific web address on the internet.
+
+2. Relative Hyperlinks : Relative hyperlinks use a relative path to the target document or resource, which is relative to the current web page's location. Relative hyperlinks do not include the protocol or domain name, but instead specify the path or file name of the target document or resource relative to the current web page's location. Relative hyperlinks are commonly used when linking to documents or resources within the same website or domain.
+ -->
+
+ <!-- 
+ Target Attribute in Hyperlink Tag :
+The target attribute is used to specify where the linked document or resource should be displayed when a hyperlink is clicked. It is used as an attribute within the <a> (anchor) tag, which is used to create hyperlinks.The target attribute can take several values, including:
+
+1. _self: The linked document or resource will be loaded in the same frame or window as the current web page. This is the default behavior if the target attribute is not specified.
+
+Example:
+
+<a href="https://example.com" target="_self">Visit Example Website</a>
+2. _blank: The linked document or resource will be loaded in a new, unnamed browser window or tab.
+
+Example:
+
+<a href="https://example.com" target="_blank">Visit Example Website</a>
+3. _parent: The linked document or resource will be loaded in the parent frame or window of the current web page, if the current web page is within a frameset or iframe.
+
+Example:
+
+<a href="https://example.com" target="_parent">Visit Example Website</a>
+4. _top: The linked document or resource will be loaded in the top-level browsing context, replacing any frames or iframes that may be present.
+
+Example:
+
+<a href="https://example.com" target="_top">Visit Example Website</a>
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Target 1</title>
+ </head>
+ <body>
+     
+     <a href="https://www.geeksforgeeks.org/" target="_blank"></a>
+     
+     <a href="https://www.geeksforgeeks.org/" target="_parent"></a>
+     
+     <a href="https://www.geeksforgeeks.org/" target="_self"></a>
+     
+     <a href="https://www.geeksforgeeks.org/" target="_top"></a>
+ </body>
+ </html>
+ <!--
+ Explanation :
+These codes are related to the use of the target attribute in hyperlinks and iframes.
+
+In the first HTML code block, there are four hyperlinks that have different values set for the target attribute. The target attribute determines where the linked document should be displayed when the user clicks on the hyperlink. The values used in this code block are:
+
+_blank: The linked document will be displayed in a new window or tab.
+_parent: The linked document will be displayed in the parent frame of the current frame or in the parent window if there is no parent frame.
+_self: The linked document will replace the current document in the same frame or window.
+_top: The linked document will replace the current document and will be displayed in the full body of the window.
+In the second HTML code block, there is an iframe that embeds the content of the third HTML code block. The src attribute specifies the source URL of the document to be embedded, and the width and height attributes define the size of the iframe. When the user loads the second HTML document, the embedded document from the third HTML code block is displayed within the iframe.
+
+In the third HTML code block, there is another iframe that embeds the content of the fourth HTML code block. The embedded document contains a hyperlink with the target attribute set to _self. When the user clicks on the hyperlink, the linked document will replace the current document in the same frame or window.
+
+In the fourth HTML code block, there is a hyperlink with the target attribute set to _self. This means that when the user clicks on the hyperlink, the linked document located at "https://www.geeksforgeeks.org/" will replace the current document in the same frame or window. The linked document will load in the same browser window or frame where the hyperlink is clicked, and it will replace the content of the current document with the content of the linked document.
+
+The text "Geeks For Geeks" is the visible link text that will be displayed to the user. When the user clicks on this link, the browser will navigate to the URL specified in the href attribute, which is "https://www.geeksforgeeks.org/". The target attribute _self ensures that the linked document will be loaded in the same window or frame where the hyperlink is clicked, and the current document will be replaced by the content of the linked document.
+ -->
